@@ -1,0 +1,215 @@
+
+@font-face {
+    font-family: 'merriweatheritalic';
+    src: url('../fonts/merriweather-italic-webfont.woff2') format('woff2'),
+         url('../fonts/merriweather-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'merriweatherlight_italic';
+    src: url('../fonts/merriweather-lightit-webfont.woff2') format('woff2'),
+         url('../fonts/merriweather-lightit-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'merriweatherregular';
+    src: url('../fonts/merriweather-regular-webfont.woff2') format('woff2'),
+         url('../fonts/merriweather-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'merriweatherultrabold_italic';
+    src: url('../fonts/merriweather-ultrabdit-webfont.woff2') format('woff2'),
+         url('../fonts/merriweather-ultrabdit-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'merriweather_lightregular';
+    src: url('../fonts/merriweather_light-webfont.woff2') format('woff2'),
+         url('../fonts/merriweather_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'merriweatherultrabold';
+    src: url('../fonts/merriweather_ultrabold-webfont.woff2') format('woff2'),
+         url('../fonts/merriweather_ultrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'merriweatherbold';
+    src: url('../fonts/merriweather-bold-webfont.woff2') format('woff2'),
+         url('../fonts/merriweather-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'brandon_grotesqueregular';
+    src: url('../fonts/brandon_reg-webfont.woff2') format('woff2'),
+         url('../fonts/brandon_reg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'brandon_grotesqueRgIt';
+    src: url('../fonts/brandon_reg_it-webfont.woff2') format('woff2'),
+         url('../fonts/brandon_reg_it-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+
+
+* {outline: none; box-sizing: border-box;}
+a {text-decoration: none; cursor: pointer;}
+body, html, h1, h2, h3, h4, h5, h6, p, header, footer, div, article, section, aside {padding: 0; margin: 0; position: relative;}
+body, html {height: 100%;}
+input, select, textarea, button {outline: 0; border: 0; appearance: none; -webkit-appearance: none; -moz-appearance: none; -o-appearance: none;}
+
+/* Common Classes */
+.wid100 {width:100%; float: left; }
+.fleft {float: left;}
+.fright {float: right;}
+.listn {list-style: none; margin: 0; padding: 0;}
+.defimg {width: 100%; height: auto;}
+.defimg2 {width: auto; height: auto;}
+.coverimg {width: 100%; height: 100%; object-fit: cover;}
+.containimg {width: 100%; height: 100%; object-fit: contain;}
+.pagewrapper {width: 100%;  margin: 0 auto; max-width: 1366px; padding: 0 25px;}
+.pagewrapper2 {width: 100%; margin: 0 auto; max-width: 990px;}
+img {@extend .defimg}
+.close {width: 35px; height: 35px; background: url(../images/iconset1.png) no-repeat right -35px; position: absolute; right: 10px; top: 10px;}
+
+
+/* Colors & Fonts */
+$fontmain: 'brandon_grotesqueregular', Arial, sans-serif;
+$fonthead: 'merriweatherregular', Arial, sans-serif;
+
+
+
+/* Colors */
+
+$gray : #ccc;
+$white : #fff;
+$yellow : #d3d962;
+
+
+.navbar-header { float: none; height: 91px; border-bottom: 1px solid #ececec;}
+.nav-logo { margin: 0 auto;  margin-top: 15px; max-width: 185px;
+    img { width: 100%; object-fit: contain;}
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form { border: 0px; border-color: none;}
+
+
+
+.social-media { position: absolute; top: 0;
+    ul { padding: 0px; margin: 0px;
+        li { display: inline-block;
+            a i { font-size: 20px; color: #7f7f7f;}
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer { position: relative; background-color: #373737; 
+    > ul{ padding: 0; margin: 0; display: flex;
+
+        > li{ display: inline-block; border-right: 1px solid #4b4b4b; padding: 20px 0px; vertical-align: text-top;} 
+
+        > li:first-child { width: 50%; padding-right: 35px; padding-left: 50px;
+        div { border-bottom: 1px solid #4b4b4b; padding-bottom: 15px; margin-bottom: 15px;
+            figure { max-width: 175px; height: auto;
+                 img { height: 100%; object-fit: cover;}
+            }
+        }
+    }
+
+        > li:nth-child(2) { width: 20%; padding: 35px 45px;
+            > ul { padding: 0px;
+                > li { margin-bottom: 5px; }
+                a { font-family: $fontmain; font-size: 20px; color: $gray; text-decoration: none;}
+            }
+        }
+
+        > li:nth-child(3) { width: 29%; padding: 35px 50px 35px 35px; border-right: 0px;
+            h5 { font-family: $fontmain; font-weight: bold; color: $gray; font-size: 20px; text-transform: uppercase; }
+
+            > div { margin: 15px 0px;
+                > span { background:#a7a09a; font-size: 20px; padding: 10px 15px; border-radius: 50%; margin-right: 15px; 
+                    a { color: $white;}
+                }
+            }
+
+            span.yllow-text { color: $yellow; display: block; font-famiy: $fontmain; font-weight: bold;  }
+
+            p > a { text-transform: uppercase; text-decoration: underline; color: $gray;}
+        }
+
+    }
+    
+    p{ font-family: $fontmain; color: $gray; font-size: 20px; }
+
+    .right { background-color: #464646; text-align: center; padding: 22px;
+        h5 {  font-family: $fontmain; color: $gray; text-transform: uppercase; font-size: 16px;}
+    }
+}
