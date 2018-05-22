@@ -139,18 +139,13 @@ input, select, textarea, button {
   border: 0px;
   border-color: none; }
 
-.social-media {
-  position: absolute;
-  top: 0; }
-  .social-media ul {
-    padding: 0px;
-    margin: 0px; }
-    .social-media ul li {
-      display: inline-block; }
-      .social-media ul li a i {
-        font-size: 20px;
-        color: #7f7f7f; }
-
+/*.social-media { position: absolute; top: 0;
+    ul { padding: 0px; margin: 0px;
+        li { display: inline-block;
+            a i { font-size: 20px; color: #7f7f7f;}
+        }
+    }
+}*/
 footer {
   position: relative;
   background-color: #373737; }
