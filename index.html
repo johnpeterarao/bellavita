@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/main.css">
   <!--<style>
     .quote {
@@ -34,7 +35,7 @@
       <header id="header">
           <div class="navbar-holder">
               <!-- if you want to customize the nav, just add class and call it on css -->
-              <nav role="navigation" class="navbar navbar-default">
+              <nav role="navigation" class="navbar navbar-default nav-custom">
                   <!-- Brand and toggle get grouped for better mobile display -->
                   <div class="navbar-header">
                       <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
@@ -83,15 +84,30 @@
                           </li>
                       </ul>
                   </div>
+
+                  <div class="cntct">
+                      <a href="">Contact Us</a>
+                  </div>
               </nav>
           </div>
       </header>
-      <!-- <section class="slider-banner">
-
+      <section class="slider-banner">
+        <div class="owl-carousel owl-theme home-carousel">
+            <div class="item">
+              <aside>
+                <img src="images/banner.jpg">
+              </aside>
+              <article>
+                <h2>BellaVita Sakto Sa‘yo</h2>
+              </article>
+            </div>
+            
+        </div>
       </section>
-      <article class="property-finder">
+      <!-- <article class="property-finder">
+        <div class="container-1440">
+          <h4>Find the Home for you</h4>
         <ul>
-          <li><h4>Find the Home for you</h4></li>
           <li>
             <label>Location</label>
             <select>
@@ -110,23 +126,26 @@
               <button>Search</button>
           </li>
         </ul>
-      </article>
+        </div>
+        
+      </article> -->
       <section class="property-listing">
-          <div>
+          <div class="container-cs">
+            <div class="txt-mid">
             <h3>Property Listing</h3>
             <p>Pellentesque consectetur, libero quis tincidunt tincidunt, sem mi tempus metus, sed scelerisque dui est non nisi.</p>
           </div>
 
-          <ul>
+          <ul class="pad-0 listn">
             <li>
-              <h4>Bellavita</h4>
+              <h4>Bellavita Alaminos</h4>
               <h5><span>Laguna</span> House &amp; Lot</h5>
               <aside>
                 <img src="images/thumbnail.jpg">
               </aside>
               <article>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam maximus odio quis sapien mattis accumsan. Donec a vestibulum massa. Nunc quis blandit quam.</p>
-                <ul>
+                <ul class="pad-0 listn">
                   <li>
                     <span class="size"></span><span>22-60sqm</span>
                   </li>
@@ -144,22 +163,23 @@
                 <div style="width:50%; float:left; background: url(images/divide.jpg) repeat-y center top; background-size: 100% auto;">
                   <ul style="width: 100%; float: left; list-style: none; margin: 0; padding: 0; text-align: center">
                     <li style="width: 49%; display: inline-table; ">
-                      <h6>P400k - P1.1m<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam maximus odio quis sapien mattis accumsan. Donec a vestibulum massa. Nunc quis blandit quam.</h6>
+                      <h6>P400k - P1.1m</h6>
                     </li>
                     <li style="width: 50%;  display: inline-table;">
                       <a href="">View Details</a>
                     </li>
                   </ul>
                 </div>
-                <h6><a href="">View All properties</a></h6>
+                <!-- <h6><a href="">View All properties</a></h6> -->
               </article>
               
             </li>
           </ul>
+          </div>
 
       </section>
 
-      <section class="quote">
+      <!-- <section class="quote">
 
       </section>
 
@@ -252,9 +272,25 @@
   </div>
   <script src="js/vendor/jquery-v3.2.1.min.js"></script>
   <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
   <script src="js/main.js"></script>
   <script type="text/javascript">
-
+  $('.home-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
 
   </script>
 </body>

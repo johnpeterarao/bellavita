@@ -103,6 +103,27 @@
 
 }
 
+@font-face {
+    font-family: 'brandon_grotesquebold';
+    src: url('../fonts/brandon_bld-webfont.woff2') format('woff2'),
+         url('../fonts/brandon_bld-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'brandon_grotesquemedium';
+    src: url('../fonts/brandon_med-webfont.woff2') format('woff2'),
+         url('../fonts/brandon_med-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 
 
@@ -128,39 +149,123 @@ input, select, textarea, button {outline: 0; border: 0; appearance: none; -webki
 .pagewrapper2 {width: 100%; margin: 0 auto; max-width: 990px;}
 img {@extend .defimg}
 .close {width: 35px; height: 35px; background: url(../images/iconset1.png) no-repeat right -35px; position: absolute; right: 10px; top: 10px;}
-
+.pad-0 { padding: 0px;}
 
 /* Colors & Fonts */
 $fontmain: 'brandon_grotesqueregular', Arial, sans-serif;
 $fonthead: 'merriweatherregular', Arial, sans-serif;
-
-
+$fontmed: 'brandon_grotesquemedium';
+$fonthead2: 'merriweatherbold';
 
 /* Colors */
 
 $gray : #ccc;
 $white : #fff;
 $yellow : #d3d962;
+$black: #000;
+$green : #939b00;
+$gold : #a1a81c;
+$darkgray : #676767;
 
 
+#header { position: absolute;top: 0; width: 100%; z-index: 999;}
 .navbar-header { float: none; height: 91px; border-bottom: 1px solid #ececec;}
 .nav-logo { margin: 0 auto;  margin-top: 15px; max-width: 185px;
     img { width: 100%; object-fit: contain;}
 }
 .navbar-default .navbar-collapse, .navbar-default .navbar-form { border: 0px; border-color: none;}
-
-
-
-/*.social-media { position: absolute; top: 0;
-    ul { padding: 0px; margin: 0px;
-        li { display: inline-block;
-            a i { font-size: 20px; color: #7f7f7f;}
+.nav-custom {     box-shadow: 0px 2px 9px #c7c6be; 
+    .navbar-nav { max-width: 1050px; margin: 0 auto; float: none;
+        > li {
+            > a { font-family: $fontmed; color: $black; text-transform: uppercase; font-size: 16px; padding: 14px 17px;}
+            
+            a:hover, a:active, a:focus { background : transparent;}
         }
     }
-}*/
+}
+.navbar { margin-bottom: 0px;}
+
+
+.social-media { position: absolute; top: 35px; left: 36px;
+    ul { padding: 0px; margin: 0px;
+        li { display: inline-block; margin-right: 25px;
+            a i { font-size: 28px; color: #7f7f7f;}
+        }
+    }
+}
+
+.cntct { position: absolute; top: 35px; right: 36px;
+    a { padding: 14px 22px; background: #9ba12e; color: $white; text-transform: uppercase; font-size: 16px; text-decoration: none; font-family: $fontmed; border-radius: 3px;}
+}
 
 
 
+
+
+.slider-banner {
+    .home-carousel { 
+        aside { height: 90vh; 
+            img { height: 100%; object-fit: cover;}
+        }
+        article { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 40px 48px; background: rgba(247, 174, 56, 0.8);
+            h2 { font-family: 'merriweatherbold'; font-size: 72px; color: $white; }
+        }
+    }
+
+}
+
+
+.property-listing { padding: 40px 0px;
+    div.txt-mid { text-align: center; max-width: 819px; margin: 0 auto; padding: 0px 15px; margin-bottom: 40px;
+        h3 { font-family: $fonthead; font-size: 28px; color: $black; margin-bottom: 17px;}
+        p { font-family: $fontmain; font-size: 20px; color: $black; letter-spacing: 2px;}
+    }
+    ul { 
+        li { width: 24.5%; padding-top: 11px; /*box-shadow: 0px 0px 14px #e8e8e8;*/
+            h4 { font-family: $fonthead2; color: $gold; margin-bottom: 6px;  padding-left: 15px;}
+            h5 { font-family: $fontmed; font-size: 14px; color: $darkgray; margin-bottom: 11px; padding-left: 15px;
+                span { text-transform: uppercase; padding-right: 7px; margin-right: 10px; border-right: 1px solid #8d8d8d}
+            }
+            aside { margin-bottom: 20px; height: 188px; 
+                img { width: 100%; height: 100%; object-fit: cover;}
+            }
+            p { font-family: $fontmain; font-size: 16px; font-color: $darkgray;}
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.property-finder { background: #fff1cb; padding: 0px 50px;
+    .container-1440{ 
+        h4 { font-family: $fonthead; font-size: 24px; color: $green; display: inline-block; max-width: 300px; width: 100%;}
+
+        > ul { list-style-type: none; padding: 24px 0px; margin: 0; max-width: 1011px; width: 100%; background: #ffedbf; display: inline-block;
+
+            > li { display: inline-block; width: 33%; padding: 0px 50px; 
+
+            label { font-family: $fontmain;margin: 0px;text-transform: uppercase; margin-right: 25px}
+
+            select {     background-color: transparent; max-width: 120px; width: 100%; font-family: "brandon_grotesqueregular", Arial, sans-serif; background-image: url(../images/arrow-down.png); background-repeat: no-repeat; background-position: right; height: 30px; }
+            }
+        }
+
+    }
+
+}
 
 
 
@@ -213,3 +318,9 @@ footer { position: relative; background-color: #373737;
         h5 {  font-family: $fontmain; color: $gray; text-transform: uppercase; font-size: 16px;}
     }
 }
+
+
+
+.container-1440 { box-sizing: border-box; max-width: 1440px; padding: 0px 50px;}
+
+.container-cs { box-sizing: border-box; max-width: 1440px; padding: 0px 25px; margin: 0 auto;}
