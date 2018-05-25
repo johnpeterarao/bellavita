@@ -707,7 +707,8 @@ input, select, textarea, button {
 
 .property-finder {
   background: #fff1cb;
-  padding: 0px 50px; }
+  padding: 0px 50px;
+  z-index: 2; }
   .property-finder .container-cs h4 {
     font-family: "merriweatherregular", Arial, sans-serif;
     font-size: 24px;
@@ -789,7 +790,8 @@ input, select, textarea, button {
 .slcted-location .property-finder {
   position: absolute;
   top: 142px;
-  width: 100%; }
+  width: 100%;
+  z-index: 2; }
 
 .news-events > .news-banner {
   background-image: url(../images/news-banner.jpg);
@@ -1302,6 +1304,85 @@ input, select, textarea, button {
         font-size: 20px;
         color: #fff;
         text-transform: uppercase; }
+
+.about .abt-banner {
+  background-image: url(../images/prop-banner.jpg);
+  background-size: cover;
+  height: 70vh;
+  position: relative; }
+  .about .abt-banner .hero {
+    position: absolute;
+    top: 55%;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .about .abt-banner .hero > h3 {
+      font-family: "merriweatherregular", Arial, sans-serif;
+      letter-spacing: 1px;
+      font-size: 36px;
+      color: #fff;
+      margin-bottom: 20px; }
+    .about .abt-banner .hero > p {
+      font-family: "brandon_grotesqueregular", Arial, sans-serif;
+      color: #fff;
+      font-size: 18px; }
+.about .abt-cntent {
+  padding: 50px 0px; }
+  .about .abt-cntent .text-mid {
+    text-align: center;
+    max-width: 810px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 40px; }
+    .about .abt-cntent .text-mid h3 {
+      font-family: 'brandon_grotesquebold';
+      font-size: 24px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 15px; }
+    .about .abt-cntent .text-mid p {
+      font-family: "brandon_grotesqueregular", Arial, sans-serif;
+      font-size: 18px; }
+  .about .abt-cntent .list-abt > li:nth-child(odd) .clearfix > figure {
+    width: 49%;
+    float: left; }
+  .about .abt-cntent .list-abt > li:nth-child(odd) .clearfix > article {
+    width: 49%;
+    float: right; }
+  .about .abt-cntent .list-abt > li:nth-child(even) .clearfix > figure {
+    width: 49%;
+    float: right; }
+  .about .abt-cntent .list-abt > li:nth-child(even) .clearfix > article {
+    width: 49%;
+    float: left; }
+  .about .abt-cntent .list-abt li {
+    margin-bottom: 25px; }
+    .about .abt-cntent .list-abt li p {
+      font-family: "brandon_grotesqueregular", Arial, sans-serif;
+      color: #000;
+      letter-spacing: 1px;
+      font-size: 18px; }
+    .about .abt-cntent .list-abt li article {
+      padding: 15px;
+      padding-top: 20px; }
+    .about .abt-cntent .list-abt li h5 {
+      font-family: 'brandon_grotesquebold';
+      text-transform: uppercase;
+      font-size: 20px;
+      margin-bottom: 20px; }
+    .about .abt-cntent .list-abt li figure {
+      position: relative;
+      height: 350px;
+      padding: 15px; }
+      .about .abt-cntent .list-abt li figure img {
+        object-fit: cover;
+        height: 100%; }
+.about .property-finder {
+  position: absolute;
+  top: 142px;
+  width: 100%;
+  z-index: 2; }
 
 footer {
   position: relative;
