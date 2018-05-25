@@ -564,14 +564,177 @@ $darkgreen : #a0a534;
 
 .prop-details{
 
-    .prop-banner { background-image: url(../images/prop-banner.jpg); height: 90vh; background-size: 100% auto; background-position: center;  background-repeat: no-repeat;
-        .hero { position: absolute; top: 50%; text-align: center; left: 50%;  transform: translate(-50%, -50%);
+    .prop-banner { background-image: url(../images/prop-banner.jpg); height: 90vh; background-size: cover; background-position: center;  background-repeat: no-repeat;
+        .hero { position: absolute; top: 55%; text-align: center; left: 50%;  transform: translate(-50%, -50%);
 
             > h3 { font-family: $fonthead; letter-spacing: 1px; font-size: 36px; color: $white; margin-bottom: 20px;}
+
+            > h5 { font-family: $fontmain; font-size:24px; color: $white; text-transform: uppercase; margin-bottom: 35px; padding-bottom: 35px; position: relative; }
+
+            h5::after { position: absolute; content: ''; width: 65px; height: 6px; background: #efdf9d; left: 50%; bottom: 0; transform: translate(-50%, -50%); }
+
+            h4 { font-family: $fonthead; color: $white; font-size: 24px;
+                span { display: block; margin-bottom: 20px;}
+            }
         }
     }
 
-    .property-finder { position: absolute; top: 142px; width: 100%;}
+    .property-finder { position: absolute; top: 142px; width: 100%; z-index: 2;}
+
+    .property-hldr { padding:50px 0px; 
+        .prprty-hldr{
+            > article { width: 65%; float: left; }
+
+            > aside { width: 33%; float: right; }
+
+            .masterplan { margin-bottom: 30px;
+                article { width: 75%; float: left; padding-right: 15px;
+                    h3 { font-size: 24px; font-family: $fonthead; position: relative; max-width: 420px; margin-bottom: 30px;}
+
+                    h3::after { position: absolute; content: ''; background: #f7ae38; width: 110px; height: 12px; right: 0; top: 7px; }
+
+                    p { font-family: $fontmain; font-size: 18px; color: $black;
+                    span { font-family: 'brandon_grotesquebold'; color: $black; display: block;  margin-top: 40px; }
+                    }
+                }
+                
+
+                > aside { float: right; width: 100%; max-width: 210px; height: 280px;
+                    img { object-fit: cover; height: 100%;}
+                }
+            }
+        }
+
+        .gallery{ 
+            > h3 { font-family: $fonthead; font-size: 24px; color: $black; margin-bottom: 30px; position: relative; max-width: 245px; text-transform: uppercase;}
+
+            h3::after { position: absolute; content: ''; width: 110px; height: 12px; background : #f7ae38; right: 0; top: 6px;}
+
+            .gallery-carousel{
+                padding: 0px 50px; position: relative; display: block !important; 
+            }
+            .gallery-carousel .owl-nav{ display: block; position: absolute; top: 45%; width: 100%; left: 0;
+                [class*=owl-] { background: transparent; color: $black; font-size: 40px; margin: 0;}
+                .owl-prev { left: 0; position: absolute;}
+                .owl-next { right: 0; position: absolute;}
+            }
+            .gallery-carousel .owl-dots { display: none;}
+
+            
+
+            .item-gallery { position: relative;
+
+                article { position: absolute; padding: 23px 35px;  background: rgba(34 , 34, 34, 0.5); bottom: 0; width: 100%;
+                    
+                    h4 { color: #9ba12e; font-family: $fonthead; font-size: 20px; margin-bottom: 15px;}
+
+                    p { font-family: 'brandon_grotesqueRgIt'; color: $white; font-size: 18px;}
+                }
+            }
+        }
+
+        .nearby { padding: 50px 0px;
+
+            h3{ font-family: $fonthead; color: $black; text-transform: uppercase; font-size: 24px; position: relative; max-width: 465px; margin-bottom: 30px;}
+
+            h3::after { position: absolute; content: ''; height: 12px; width: 110px; background: #f7ae38; right: 0; top: 6px;}
+
+            p { font-family: $fontmain; color: $darkgray; font-size: 18px; margin-bottom: 25px;}
+
+            .nearby-list {
+                > li { width: 33%; display: inline-block; padding: 0 15px; margin-bottom: 25px;
+                    > figure { max-width: 268px; height: 167px; margin: 0 auto; 
+                        img { width: 100%; height: 100%; object-fit: cover;}
+                     }
+                }
+            }
+
+        }
+
+        .updates {
+            h3 { font-family: $fonthead; font-size: 24px; color: $black; position: relative; text-transform: uppercase; max-width: 445px; margin-bottom: 30px;}
+
+            h3:after {position: absolute; content: ''; height: 12px; width: 110px; background: #f7ae38; right: 0; top: 6px;
+            }
+
+            .cons-list { 
+                > li { width: 33%; display: inline-block; padding: 0px 15px;
+                    > figure { max-width: 267px; width: 100%; height: 167px; margin: 0 auto; margin-bottom: 15px;
+                        img { height: 100%; object-fit: cover;}
+                    }
+
+                    > figcaption { text-align: center;
+                        h5 { font-family: $fonthead; font-weight: bold; text-transform: uppercase;}
+                    }
+                }
+            }
+
+        }
+
+        .details { margin-bottom: 45px;
+            > h3 { font-family: $fonthead; font-size: 24px; color: $black; position: relative; text-transform: uppercase; max-width: 370px; margin-bottom: 17px;}
+
+            > h3::after { position: absolute; content: ''; width: 110px; height: 12px; background: #f7ae38; right: 0; top: 6px;}  
+        }
+
+    }
+
+    .property-listing { background: #efefef;
+        .txt-mid {
+            > h3 { font-size: 24px; font-style: italic;}
+        }
+
+        ul.item_hldr > li .bx-shdw { background: #fff;}
+    }
+
+    .share-email { background: #fcbf0f; padding: 30px; margin-bottom: 8px;
+
+        > li { width: 49%; display: inline-block; vertical-align: middle;
+            img{ float: left;}
+        }
+
+        > li:first-child { 
+            img { height: 28px; width: 29px; margin-right: 20px;}
+        }
+
+        > li:last-child{
+            img { height: 28px; width: 40px; margin-right: 20px;}
+        }
+
+        h5 { font-family: 'brandon_grotesquebold'; text-transform: uppercase; font-size: 20px;  color: $black; padding-top: 3px;}
+
+        a{ text-decoration: none;}
+    }
+
+    .calc-list { background: #6c7079; padding: 23px 18px; margin-bottom: 15px;
+        > li { text-align: center; padding: 15px 0px; border: 2px solid #fff; margin-bottom: 18px; cursor: pointer; transition: 0.5s;
+            a { font-size: 20px; font-family: 'brandon_grotesquebold'; color: $white; text-transform: uppercase; text-decoration: none; letter-spacing: 1px; }
+        }
+
+        li:hover { background: #a0a534;}
+    }
+
+    .cntct-msg { padding: 26px 20px; background: #efefef;
+
+        h3  { font-family: $fonthead; font-size: 24px; color: $black; text-transform: uppercase; margin-bottom: 23px;}
+
+        ul {
+            > li { margin-bottom: 25px;
+                > h6 { font-size: 18px; font-family: $fontmain; color: $black; margin-bottom: 15px;}
+
+                input[type="text"] , input[type="email"] { font-family: $fontmain; width: 100%; height: 50px; padding: 0px 15px; font-size: 18px;}
+
+                textarea{ width: 100%; resize: none; padding: 15px 15px; font-family: $fontmain; font-size: 18px; height: 208px;}
+
+                input[type="submit"]{ padding: 10px 20px; background: #a0a534; text-transform: uppercase; color: $white; font-size: 19px; letter-spacing: 1px; transition: ease-in 0.3s; border: 2px solid #a0a534;}
+
+                input[type="submit"]:hover { background: $white; boder: 2px solid #a0a534; color: #a0a534; }
+
+            }
+
+            li:last-child { margin-bottom: 0px;}
+        }
+    }
 
 }
 
@@ -588,8 +751,93 @@ $darkgreen : #a0a534;
 
 
 
+.prop-details {
+    
+    .tab {
+        overflow: hidden;
+        background-color: #efefef;
+        display: flex;
+    }
 
 
+    .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 18px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+        width: 33%;
+        font-family: $fonthead;
+    }
+
+
+    .tab button:hover {
+        background-color: #bec249;
+        color: $white;
+    }
+
+
+    .tab button.active {
+        background-color: #bec249;
+        color: $white;
+    }
+
+
+    .tabcontent { display: none; padding: 19px 28px; background: #f7f7f7;
+         p { font-family: $fontmain; font-size: 18px; color: $black; }
+
+        .p_mrgn { margin-bottom: 40px;}
+
+        .tablist {  
+            h4 { font-size: 18px; font-family: 'brandon_grotesquebold'; color: $black; margin-bottom: 10px;}
+            > li { padding-left: 20px; 
+
+            }
+        }
+
+        .tablist2 { margin-top: 40px; 
+            h4 { font-size: 18px; font-family: $fontmain; color: $black; margin-bottom: 10px;}
+            > li { padding-left: 20px; 
+
+            }
+        }
+
+        article { width: 72%; float: left; }
+
+        aside{ max-width: 210px; height: 280px; width: 100%; float: right; 
+            img { width: 100%;}
+
+        }
+    }
+}
+
+
+.cur-selling { background:#a0a534;
+    aside{ height: 110px; max-width: 180px; width: 100%; float: left; margin-top: -55px;
+        img { height: 100%; object-fit: cover;}
+    }
+
+    .selling-list { padding-left: 215px; 
+        li { display: inline-block; width: 19.5%; padding: 24px 0px; vertical-align: middle;
+
+            span.ruler { background-image: url(../images/ruler-w.png); background-repeat: no-repeat; background-size: contain; font-family: $fontmain; color: #fff; font-size: 20px; padding-left: 50px;}
+
+            span.bed {     background-image: url(../images/bed-w.png); background-repeat: no-repeat; background-size: 35px 20px; font-family: "brandon_grotesqueregular", Arial, sans-serif; background-position-y: 3px; color: #fff; font-size: 20px; padding-left: 56px;}
+
+            span.tb { background-image: url(../images/hottub-w.png); background-repeat: no-repeat; background-size: 35px 20px; font-family: "brandon_grotesqueregular", Arial, sans-serif; background-position-y: 3px; color: #fff; font-size: 20px; padding-left: 56px;}
+
+            span.garage { background-image: url(../images/home-w.png); background-repeat: no-repeat; background-size: 32px 22px; font-family: "brandon_grotesqueregular", Arial, sans-serif; background-position-y: 3px; color: #fff; font-size: 20px; padding-left: 56px;}
+        }
+
+        li:last-child { background: #bec249; text-align: center;
+            span.lst-child {   font-family: 'brandon_grotesquebold';  font-size: 20px; color: $white; text-transform: uppercase;}
+        }
+
+    }
+}
 
 
 
