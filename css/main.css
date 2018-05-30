@@ -1384,6 +1384,120 @@ input, select, textarea, button {
   width: 100%;
   z-index: 2; }
 
+.buyers-guide .buyrs {
+  background-image: url(../images/prop-banner.jpg);
+  height: 70vh; }
+  .buyers-guide .buyrs .hero {
+    position: absolute;
+    top: 55%;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .buyers-guide .buyrs .hero > h3 {
+      font-family: "merriweatherregular", Arial, sans-serif;
+      letter-spacing: 1px;
+      font-size: 36px;
+      color: #fff;
+      margin-bottom: 20px; }
+    .buyers-guide .buyrs .hero p {
+      font-family: "brandon_grotesqueregular", Arial, sans-serif;
+      font-size: 18px;
+      color: #fff;
+      letter-spacing: 1px; }
+.buyers-guide .byr-content {
+  padding: 50px 0px; }
+  .buyers-guide .byr-content ul {
+    padding: 0px; }
+    .buyers-guide .byr-content ul li {
+      width: 33%;
+      display: inline-block;
+      padding: 0px 15px;
+      margin-bottom: 25px;
+      cursor: pointer;
+      vertical-align: text-top; }
+      .buyers-guide .byr-content ul li article {
+        padding: 15px;
+        text-align: left; }
+        .buyers-guide .byr-content ul li article h4 {
+          font-family: 'brandon_grotesquebold';
+          text-transform: uppercase;
+          font-size: 20px;
+          margin-bottom: 15px;
+          color: #939b00; }
+        .buyers-guide .byr-content ul li article p {
+          font-family: "brandon_grotesqueregular", Arial, sans-serif;
+          font-size: 17px;
+          color: #000; }
+    .buyers-guide .byr-content ul li:hover > div {
+      box-shadow: 0px 0px 20px #e8e8e8; }
+.buyers-guide .property-finder {
+  position: absolute;
+  top: 142px;
+  width: 100%;
+  z-index: 2; }
+
+.agents-sc .agents-sec {
+  background-image: url(../images/prop-banner.jpg);
+  height: 70vh; }
+  .agents-sc .agents-sec .hero {
+    position: absolute;
+    top: 55%;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .agents-sc .agents-sec .hero > h3 {
+      font-family: "merriweatherregular", Arial, sans-serif;
+      letter-spacing: 1px;
+      font-size: 36px;
+      color: #fff;
+      margin-bottom: 20px; }
+    .agents-sc .agents-sec .hero p {
+      font-family: "brandon_grotesqueregular", Arial, sans-serif;
+      font-size: 18px;
+      color: #fff;
+      letter-spacing: 1px; }
+.agents-sc .agnts-cntent {
+  padding: 40px 0px; }
+  .agents-sc .agnts-cntent ul {
+    padding: 0px; }
+    .agents-sc .agnts-cntent ul li {
+      width: 19.5%;
+      display: inline-block;
+      padding: 0px 15px;
+      margin-bottom: 35px;
+      vertical-align: text-top; }
+      .agents-sc .agnts-cntent ul li aside {
+        max-width: 150px;
+        height: 150px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 15px; }
+        .agents-sc .agnts-cntent ul li aside img {
+          height: 100%;
+          object-fit: contain; }
+      .agents-sc .agnts-cntent ul li article {
+        text-align: center;
+        padding: 0px 15px; }
+        .agents-sc .agnts-cntent ul li article h5 a {
+          margin-top: 15px;
+          font-family: 'brandon_grotesquebold';
+          font-size: 20px;
+          color: #000;
+          display: block;
+          text-decoration: none; }
+        .agents-sc .agnts-cntent ul li article h6 {
+          margin-top: 5px;
+          font-family: "brandon_grotesqueregular", Arial, sans-serif;
+          font-size: 16px;
+          margin-bottom: 15px; }
+    .agents-sc .agnts-cntent ul li:hover {
+      box-shadow: 0px 0px 20px #e8e8e8; }
+.agents-sc .property-finder {
+  position: absolute;
+  top: 142px;
+  width: 100%;
+  z-index: 2; }
+
 footer {
   position: relative;
   background-color: #373737; }
