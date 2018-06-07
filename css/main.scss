@@ -170,7 +170,7 @@ $yel-orange : #f7ae38;
 $darkgreen : #a0a534;
 
 
-#header { position: absolute;top: 0; width: 100%; z-index: 999;}
+#header { position: relative;top: 0; width: 100%; z-index: 999;}
 
 .navbar-header { float: none; height: 91px; border-bottom: 1px solid #ececec;}
 
