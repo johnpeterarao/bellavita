@@ -55,6 +55,7 @@
 	.about .abt-banner .hero > h3 { font-size: 35px!important}
 	.agents-sc .agents-sec .hero > h3 { font-size: 35px!important}
 	.buyers-guide .buyrs .hero > h3{ font-size: 35px!important;}
+	.contact .cntct_bnner .hero > h3 { font-size: 35px!important;}
 }
 
 @media only screen and (max-width: 1240px){
@@ -239,7 +240,10 @@
     .buyers-guide .buyrs .hero { max-width: 730px!important; width: 100%!important; padding: 0px 15px;}
     .buyers-guide .buyrs .hero > h3 { font-size: 30px!important;}
     .buyers-guide .byr-content ul li article p{ font-size: 15px!important;}
+    .contact .cntct_bnner .hero > h3 { font-size: 30px!important;}
 
+    .contact .cntct_form aside > .cntct-info > li a { font-size: 16px!important; }
+    .contact .cntct_form article > ul > li span { font-size: 16px!important; }
 }
 
 @media only screen and (max-width: 870px){
@@ -288,6 +292,13 @@
     .agents-sc .agnts-cntent ul li { width: 32%!important;}
 
 }
+
+@media only screen and (max-width: 850px){
+	.contact .cntct_form aside { width: 100%!important; float: none!important; padding: 0px 0px!important; margin-bottom: 35px; }
+	.contact .cntct_form article { float: none!important; width: 100%!important; padding: 0px!important; }
+	.contact .cntct_form { padding: 30px 0px!important; }
+}
+
 
 @media only screen and (max-width: 826px){
 	.buyers-guide .byr-content ul li { padding: 0px 5px!important; width: 32%!important;}
@@ -386,7 +397,6 @@
     .about .abt-cntent .list-abt li h5 { margin-bottom: 10px!important;}
     .about .abt-cntent .list-abt > li:nth-child(even) .clearfix > figure { width: 100%!important; float: none!important;  padding: 15px 0px!important;}
     .about .abt-cntent .list-abt > li:nth-child(even) .clearfix > article { width: 100%!important; float: none!important; padding: 0px!important}
-    .agents-sc .agents-sec { height: 60vh!important;}
     .agents-sc .property-finder { position: relative!important;}
     .agents-sc .agents-sec .hero { top: 45%!important;}
     .buyers-guide .property-finder{ position: relative!important;}
@@ -395,6 +405,7 @@
     .buyers-guide .byr-content ul { display: block!important;}
     .buyers-guide .byr-content ul li  { width: 49%!important;}
     .buyers-guide .byr-content ul li article h4 { margin-bottom: 5px!important;}
+    .contact .cntct_bnner .hero { top: 45%!important}
 }
 
 
@@ -404,6 +415,7 @@
 
 @media only screen and (max-width: 620px){
 	.agents-sc .agnts-cntent ul li { padding: 0px 5px!important;}
+	.contact .cntct_form article > ul > li { width: 100%!important; }
 }
 
 
@@ -473,6 +485,7 @@
 	.featured { padding: 40px 0px!important}
 	.news-events .news ul.ne-list li { width: 100%!important; padding: 0px!important;}
 	.agents-sc .agnts-cntent ul li { width: 49%!important}
+	.contact .cntct_form article > ul > li { padding: 0px!important; }
 }
 
 @media only screen and (max-width: 527px){
@@ -555,6 +568,7 @@
 	.agents-sc .agents-sec .hero > h3 { font-size: 26px!important;}
 	.buyers-guide .buyrs .hero > h3 { font-size: 26px!important;}
 	.buyers-guide .byr-content ul li { width: 100%!important; padding: 0px!important;}
+	.contact .cntct_bnner .hero > h3 { font-size: 26px!important;}
 }
 
 @media only screen and (max-width: 417px){

@@ -69,7 +69,7 @@ body, html, h1, h2, h3, h4, h5, h6, p, header, footer, div, article, section, as
 body, html {
   height: 100%; }
 
-input, select, textarea, button {
+input[type="email"], input[type="text"], select, textarea, button {
   outline: 0;
   border: 0;
   appearance: none;
@@ -789,7 +789,7 @@ input, select, textarea, button {
       text-align: left; }
 .slcted-location .property-finder {
   position: absolute;
-  top: 142px;
+  top: 0px;
   width: 100%;
   z-index: 2; }
 
@@ -878,7 +878,7 @@ input, select, textarea, button {
         margin-bottom: 20px; }
 .prop-details .property-finder {
   position: absolute;
-  top: 142px;
+  top: 0px;
   width: 100%;
   z-index: 2; }
 .prop-details .property-hldr {
@@ -1380,7 +1380,7 @@ input, select, textarea, button {
         height: 100%; }
 .about .property-finder {
   position: absolute;
-  top: 142px;
+  top: 0px;
   width: 100%;
   z-index: 2; }
 
@@ -1432,13 +1432,16 @@ input, select, textarea, button {
       box-shadow: 0px 0px 20px #e8e8e8; }
 .buyers-guide .property-finder {
   position: absolute;
-  top: 142px;
+  top: 0px;
   width: 100%;
   z-index: 2; }
 
 .agents-sc .agents-sec {
   background-image: url(../images/prop-banner.jpg);
-  height: 70vh; }
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
   .agents-sc .agents-sec .hero {
     position: absolute;
     top: 55%;
@@ -1494,7 +1497,7 @@ input, select, textarea, button {
       box-shadow: 0px 0px 20px #e8e8e8; }
 .agents-sc .property-finder {
   position: absolute;
-  top: 142px;
+  top: 0px;
   width: 100%;
   z-index: 2; }
 
@@ -1578,6 +1581,159 @@ footer {
       color: #ccc;
       text-transform: uppercase;
       font-size: 16px; }
+
+.contact .cntct_bnner {
+  background-image: url(../images/prop-banner.jpg);
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .contact .cntct_bnner .hero {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .contact .cntct_bnner .hero > h3 {
+      font-family: "merriweatherregular", Arial, sans-serif;
+      letter-spacing: 1px;
+      font-size: 36px;
+      color: #fff;
+      margin-bottom: 20px; }
+    .contact .cntct_bnner .hero p {
+      font-family: "brandon_grotesqueregular", Arial, sans-serif;
+      font-size: 18px;
+      color: #fff;
+      letter-spacing: 1px; }
+.contact .cntct_form {
+  padding: 50px 0px; }
+  .contact .cntct_form aside {
+    float: left;
+    padding: 0px 15px;
+    width: 30%; }
+    .contact .cntct_form aside > .cntct-info {
+      margin-bottom: 35px; }
+      .contact .cntct_form aside > .cntct-info > li {
+        position: relative;
+        padding-left: 40px;
+        margin-bottom: 10px; }
+        .contact .cntct_form aside > .cntct-info > li a {
+          font-family: "brandon_grotesqueregular", Arial, sans-serif;
+          font-size: 18px;
+          color: #000;
+          text-decoration: none;
+          word-break: break-word; }
+        .contact .cntct_form aside > .cntct-info > li i {
+          position: absolute;
+          left: 0;
+          top: 5px; }
+        .contact .cntct_form aside > .cntct-info > li i.fa-mobile {
+          font-size: 23px;
+          top: 1px; }
+  .contact .cntct_form article {
+    float: right;
+    padding: 0px 15px;
+    width: 69%; }
+    .contact .cntct_form article > ul {
+      margin-bottom: 35px; }
+      .contact .cntct_form article > ul > li {
+        margin-bottom: 25px;
+        position: relative;
+        width: 49%;
+        display: inline-block;
+        padding: 0px 15px; }
+        .contact .cntct_form article > ul > li input[type="text"], .contact .cntct_form article > ul > li input[type="email"] {
+          height: 35px;
+          border: 1px solid #424242;
+          width: 100%;
+          font-family: "brandon_grotesqueregular", Arial, sans-serif;
+          padding: 0px 15px;
+          font-size: 18px;
+          color: #000;
+          transition: 0.1s ease-out; }
+        .contact .cntct_form article > ul > li input[type="text"]:focus, .contact .cntct_form article > ul > li input[type="email"]:focus {
+          border-left: 8px solid #939b00; }
+        .contact .cntct_form article > ul > li span {
+          font-family: "merriweatherregular", Arial, sans-serif;
+          font-size: 18px;
+          display: block;
+          margin-bottom: 5px; }
+        .contact .cntct_form article > ul > li textarea {
+          border: 1px solid #424242;
+          width: 100%;
+          font-family: "brandon_grotesqueregular", Arial, sans-serif;
+          padding: 15px 15px;
+          font-size: 18px;
+          color: #000;
+          width: 100%; }
+      .contact .cntct_form article > ul li.txtarea {
+        width: 100%; }
+      .contact .cntct_form article > ul li:nth-child(even) {
+        float: right; }
+      .contact .cntct_form article > ul .agr_con {
+        padding: 0px 15px; }
+        .contact .cntct_form article > ul .agr_con span {
+          font-size: 16px;
+          font-family: "brandon_grotesqueregular", Arial, sans-serif;
+          position: relative;
+          padding-left: 30px;
+          float: right; }
+          .contact .cntct_form article > ul .agr_con span input[type="checkbox"] {
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            left: 0;
+            top: -3px; }
+          .contact .cntct_form article > ul .agr_con span a {
+            color: #939b00;
+            text-decoration: none;
+            padding-bottom: 2px;
+            border-bottom: 2px solid #939b00; }
+    .contact .cntct_form article .send-cntct {
+      max-width: 150px;
+      position: relative;
+      float: right;
+      width: 100%;
+      color: #fff;
+      margin-right: 15px; }
+      .contact .cntct_form article .send-cntct input[type="submit"] {
+        width: 100%;
+        background: #939b00;
+        display: block;
+        height: 45px;
+        text-align: left;
+        padding: 0px 25px;
+        font-family: "merriweatherregular", Arial, sans-serif;
+        text-transform: uppercase;
+        font-size: 18px;
+        border: 2px solid transparent;
+        transition: 0.3s; }
+      .contact .cntct_form article .send-cntct i {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-size: 20px;
+        top: 12px;
+        right: 15px; }
+    .contact .cntct_form article input[type="submit"]:hover {
+      background: #fff;
+      color: #939b00;
+      border: 2px solid #939b00; }
+    .contact .cntct_form article input[type="submit"]:hover + i {
+      color: #939b00; }
+
+.google-maps {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden; }
+
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important; }
 
 .container-1440 {
   box-sizing: border-box;

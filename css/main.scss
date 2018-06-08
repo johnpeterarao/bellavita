@@ -134,7 +134,7 @@
 a {text-decoration: none; cursor: pointer;}
 body, html, h1, h2, h3, h4, h5, h6, p, header, footer, div, article, section, aside {padding: 0; margin: 0; position: relative;}
 body, html {height: 100%;}
-input, select, textarea, button {outline: 0; border: 0; appearance: none; -webkit-appearance: none; -moz-appearance: none; -o-appearance: none;}
+input[type="email"], input[type="text"], select, textarea, button {outline: 0; border: 0; appearance: none; -webkit-appearance: none; -moz-appearance: none; -o-appearance: none;}
 
 /* Common Classes */
 .wid100 {width:100%; float: left; }
@@ -532,7 +532,7 @@ $darkgreen : #a0a534;
 
 
 
-    .property-finder { position: absolute; top: 142px; width: 100%; z-index: 2;}
+    .property-finder { position: absolute; top: 0px; width: 100%; z-index: 2;}
 
 }
 
@@ -579,7 +579,7 @@ $darkgreen : #a0a534;
         }
     }
 
-    .property-finder { position: absolute; top: 142px; width: 100%; z-index: 2;}
+    .property-finder { position: absolute; top: 0px; width: 100%; z-index: 2;}
 
     .property-hldr { padding:50px 0px; 
         .prprty-hldr{
@@ -899,7 +899,7 @@ $darkgreen : #a0a534;
 
     }
 
-    .property-finder { position: absolute; top: 142px; width: 100%; z-index: 2;}
+    .property-finder { position: absolute; top: 0px; width: 100%; z-index: 2;}
 }
 
 
@@ -930,13 +930,13 @@ $darkgreen : #a0a534;
         }
     }
 
-    .property-finder { position: absolute; top: 142px; width: 100%; z-index: 2;}
+    .property-finder { position: absolute; top: 0px; width: 100%; z-index: 2;}
 }
 
 
 
 .agents-sc { 
-    .agents-sec { background-image: url(../images/prop-banner.jpg); height: 70vh;
+    .agents-sec { background-image: url(../images/prop-banner.jpg); height: 400px; background-repeat: no-repeat; background-size: cover; background-position: center;
 
         .hero { position: absolute; top: 55%; text-align: center; left: 50%;  transform: translate(-50%, -50%);
 
@@ -968,7 +968,7 @@ $darkgreen : #a0a534;
 
     }
 
-    .property-finder { position: absolute; top: 142px; width: 100%; z-index: 2;}
+    .property-finder { position: absolute; top: 0px; width: 100%; z-index: 2;}
     
 }
 
@@ -1027,13 +1027,106 @@ footer { position: relative; background-color: #373737;
 
 
 
+.contact {
+
+    .cntct_bnner{ background-image: url(../images/prop-banner.jpg); height: 400px; background-repeat: no-repeat; background-size: cover; background-position: center;
+
+        .hero { position: absolute; top: 50%; text-align: center; left: 50%;  transform: translate(-50%, -50%);
+
+            > h3 { font-family: $fonthead; letter-spacing: 1px; font-size: 36px; color: $white; margin-bottom: 20px;}
+
+            p { font-family: $fontmain; font-size: 18px; color: $white; letter-spacing: 1px;}
+        }
+
+    }
+
+    
+
+    .cntct_form { padding: 50px 0px;
+
+        aside { float: left; padding: 0px 15px; width: 30%;
+
+            > .cntct-info { margin-bottom: 35px;
+
+                > li{ position: relative; padding-left: 40px; margin-bottom: 10px;
+                    a { font-family: $fontmain; font-size: 18px; color: $black; text-decoration: none; word-break: break-word;}
+                    
+                    i { position: absolute; left: 0; top: 5px;}
+
+                    i.fa-mobile { font-size: 23px; top: 1px;}
+                } 
+            }
+
+
+
+        }
+        article { float: right; padding: 0px 15px;  width: 69%; 
+            > ul { margin-bottom: 35px;
+                > li { margin-bottom: 25px; position: relative;  width: 49%; display: inline-block; padding: 0px 15px;
+
+                    input[type="text"], input[type="email"] { height: 35px; border: 1px solid #424242; width: 100%; font-family: $fontmain; padding:0px 15px; font-size: 18px; color: $black; transition: 0.1s ease-out;}
+
+                    input[type="text"]:focus, input[type="email"]:focus { border-left: 8px solid $green;}
+
+                    span { font-family: $fonthead; font-size: 18px; display: block; margin-bottom: 5px; }
+
+                    textarea {  border: 1px solid #424242; width: 100%; font-family: $fontmain; padding:15px 15px; font-size: 18px; color: $black; width: 100%;  }
+
+                }
+
+                li.txtarea { width: 100%;}
+
+                li:nth-child(even) { float: right;}
+
+                .agr_con { padding: 0px 15px;
+                    span { font-size: 16px; font-family: $fontmain; position: relative; padding-left: 30px; float: right;
+
+                        input[type="checkbox"] { height: 20px; width: 20px; position: absolute; left: 0; top: -3px;}
+
+                        a { color: $green; text-decoration: none; padding-bottom: 2px; border-bottom: 2px solid $green;}
+                    }
+                }
+
+            }
+
+
+
+
+            .send-cntct{ max-width: 150px; position: relative; float: right; width: 100%; color: $white; margin-right: 15px;
+
+                input[type="submit"] { width: 100%; background: $green; display: block; height: 45px; text-align: left; padding: 0px 25px;  font-family: $fonthead; text-transform: uppercase; font-size: 18px; border: 2px solid transparent; transition: 0.3s;}
+
+                i { position: absolute; bottom: 0; right: 0; font-size: 20px;  top: 12px; right: 15px;}
+
+            }
+
+            input[type="submit"]:hover { background: $white; color: $green; border: 2px solid $green;}
+            input[type="submit"]:hover + i { color: $green;}
+
+
+        }
+
+    }
+
+}
 
 
 
 
 
-
-
+ .google-maps {
+        position: relative;
+        padding-bottom: 75%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+}
+.google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+}
 
 
 
